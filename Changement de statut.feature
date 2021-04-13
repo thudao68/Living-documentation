@@ -1,7 +1,7 @@
 Feature: WCS-1 Status change
   Scenario: Folder received
-    Given customer with its folder
-    When the system receives its folder
+    Given customer with its folder new
+    When the system receives its folder new
     Then this folder sould be have status received
   
   Scenario Outline: Folder in awaiting processing
