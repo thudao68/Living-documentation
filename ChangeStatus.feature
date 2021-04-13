@@ -1,4 +1,4 @@
-Feature: Status change
+Feature: WCS-1 Status change
   Scenario: Folder received
     Given customer with its folder
     When the system receives its folder
