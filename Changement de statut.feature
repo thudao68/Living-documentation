@@ -25,16 +25,15 @@ Feature: WCS-1 Status change
     Given folder have status in awaiting processing
     When analyst intervenes
     Then status should be folder studied
-  
-  Background:
-    Given folder studied
     
   Scenario: Folder complete
+    Given folder studied
     When all files are valids
     Then status should be folder complete
     And the customer is notified that his file is complete
   
   Scenario: Folder incomplete
+    Given folder studied
     When any file is invalid
     Then status should be folder incomplete
     And the customer is notified which document is incorrect that he must fill in a new document
